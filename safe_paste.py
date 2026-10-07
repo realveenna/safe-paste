@@ -55,10 +55,19 @@ def safe_paste():
     time.sleep(0.1)  # Small delay to ensure the paste operation completes
     pyperclip.copy(original)  # Restore the original clipboard content
 
+def main():
+    print('Safe Paste is running...')
+    print('Press Ctrl + Shift + V to safely paste')
+    print('Press Esc to stop.')
 
-print('Safe Paste is running. Press Ctrl+Shift+V to paste redacted content.')
-print('Press Ctrl + Shift + V to safely paste')
-print('Press Esc to stop.')
+    keyboard.add_hotkey(
+        'ctrl+shift+v',
+        safe_paste,
+        suppress=True
+    )
 
-keyboard.add_hotkey('ctrl+shift+v', safe_paste)
-keyboard.wait('esc')
+    keyboard.wait('esc')
+
+
+if __name__ == '__main__':
+    main()
