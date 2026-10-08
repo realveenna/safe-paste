@@ -40,7 +40,7 @@ Normal **Ctrl + V** will still paste the original clipboard content.
 
 > The Windows `.exe` does not require Python or uv to be installed.
 
-## 🛠 Running from Source
+## Running from Source
 
 Install dependencies:
 
@@ -56,7 +56,7 @@ uv run python safe_paste.py
 
 Then use **Ctrl + Shift + V** to safely paste.
 
-## 🔒 Privacy
+## Privacy
 
 Safe Paste does not collect, store, transmit, or share personal information.
 
@@ -64,7 +64,7 @@ Clipboard content is processed locally on your device and is not sent to the dev
 
 See [`PRIVACY.md`](PRIVACY.md) for the full privacy policy.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 Safe Paste is a personal project and is still a work in progress. It is intended to reduce the risk of accidentally sharing sensitive information, but **it does not guarantee that all passwords, API keys, tokens, credentials, or other sensitive data will be detected or redacted**.
 
